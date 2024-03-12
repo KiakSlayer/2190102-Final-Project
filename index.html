@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaccination Rate Chart - 2190152 Advanced Computer Programming Project</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">VACCINATION RATE CHART</a>
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About Us</a>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h1 class="chart-heading">Find Out the Vaccination Rate of a Country.</h1>
+        <form id="vacForm">
+            <label for="countryName">Enter Your Country Name:</label>
+            <input type="string" id="countryName" required>
+            <span></span>
+            <button class="button" onclick="generateChart();return false;">Generate Chart</button>
+        </form>
+        <p id="error"></p>
+        <p id="vacRate"></p>
+        <!-- <div id="canvasWrapper"> -->
+        <div id="WrapperKun">
+            <canvas id="doughnutChart"></canvas>
+        </div>
+        
+        <h3 class="source"><b>Source:</b> <a href="https://ourworldindata.org/covid-vaccinations">Our World in Data</a></h3>
+    </section>
+    <section id="about">
+        <h1>Group Members</h1>
+        <br /> <br />
+        <p>6538092821 Tuwadon Wang</p>
+        <p>6538203121 Supakorn Soponpanyaporn</p>
+        <p>6538149021 Pemapol Sripratipbundit</p>
+    </section>
+    
+</body>
+</html>
